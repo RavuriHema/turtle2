@@ -1,16 +1,22 @@
 import turtle
+screen=turtle.Screen()
+screen.bgcolor("black")
 shape=turtle.Turtle()
-colors=["red","green","blue","yellow"];
-for color in colors:
-    shape.fillcolor(color)
-    shape.begin_fill()
-    for i in range(4):
-        shape.forward(100)
-        shape.right(90)
-    shape.end_fill()
-    shape.penup()
-    shape.forward(120)
-    shape.pendown()
+shape.color("blue","lightblue")
+shape.begin_fill()
+shape.circle(100)
+shape.end_fill()
+shape.penup()
+shape.goto(0,50)
+shape.pendown()
+shape.color("white","black")
+shape.begin_fill()
+shape.circle(50)
+shape.end_fill()
+shape.penup()
+shape.goto(0,75)
+shape.pendown()
+shape.color("white","white")
+shape.begin_fill()
+shape.circle(25)
 turtle.done()
- 
-
